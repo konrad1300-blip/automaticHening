@@ -1,0 +1,35 @@
+AutomaticHening
+
+Program do projektowania plandek.
+
+Pomysł
+Pomysł polega na tym, że wczytujemy do programu plik STEP jako popularny format dla plików 3D. 
+Wczytany obiekt możemy przybliżać obracać itp podobnie jak w programie freecad. Następnie 
+program znajduje wierzchołki bryły, takie punkty które są graniczne dla bryły następnie tworzy 
+płaszczyzny na podstawie wyszukanych punktów. Ponieważ płaszczyzny te są zorientowanie 
+odmiennie w przestrzeni program wyznacza ściany ograniczone liniami które powstały w wyniku 
+przecinania się płaszczyzn. Uzyskana bryła jest przestawiona na siatce 2d z zachowaniem 
+wymiarów i kątów powstałych ścian. Dodatkowo program automatycznie generuje wzmocnienia 
+plandeki w miejscach najbardziej narażonych na przetarcie lub rozdarcie program do siatki 
+dodaje naddatek w zależności czy plandeka ma być zszywana czy zgrzewana program generuje 
+zapięcie plandeki na paski z klamrami dwóch typów albo klamra kamet albo grzechotka.
+
+Program ma otwierać się oknem powitalnym na kształt tego jak w tej chwili otwiera się nowa 
+Opera następnie mamy przejść do okna głównego będziemy mogli plik step i w głównym oknie 
+będziemy mogli manipulować wczytanym obiektem to znaczy przybliżać się oddalać obracać go tak 
+jak w tej chwili możemy to robić w programie freecad następnie trzeba będzie do menu w górze 
+Gdzie będą ikony typowe dla tego programu dodać przycisk generuj plandekę w wyniku tego 
+uruchomiona musi zostać funkcja która wyznacza granicznie skrajne wierzchołki z tych 
+wierzchołków wyznacza płaszczyzny które tworzą ściany poprzez przecinanie na liniach poprzez 
+przecinanie się tych płaszczyzn taka uproszczona bryła potem musi być przedstawiona w postaci 
+siatki czyli rozłożenia na płaszczyźnie 2d kiedy klikniemy przycisk generuje plandekę A tą 
+funkcję przeniesie nas do nowego okna w którym będziemy już mieli widok 2d wygenerowanej 
+plandeki w drugim oknie musimy mieć również kilka przycisków zaopatrzonych w odpowiednie funkcje 
+gdzie będziemy mogli poprzez wskazanie wskazać Gdzie umieścić Gdzie umieścić pasek z klamrą tą 
+klamrę umieścić to znaczy klamrę camed albo grzechotkę będziemy mogli dodać w miejscu gdzie 
+będzie łączona plandeka odpowiedni margines półtora centymetra na szczycie albo 2,5 cm na 
+zgrzewanie na początku przy generowaniu plandeki w pierwszym oknie powinniśmy mieć jeszcze 
+możliwość wyłączenia jednej ze ścian Jeżeli wyłączymy jedną ze ścian to wtedy musimy 
+zdefiniować połączenie pomiędzy częścią górną a dolną połączenie na rzep to jak szeroki ma 
+być rzep jednocześnie program tworzy wtedy dwa obiekty które na siebie nawzajem które można 
+ze sobą złączyć przy pomocy 

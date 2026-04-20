@@ -1,0 +1,7 @@
+# Core - zalecana instalacja przez conda:
+# conda install -c conda-forge pythonocc-core=7.8.1 pyside6
+pyside6>=6.6.0
+pythonocc-core>=0.18.2
+
+# Narzędzia
+numpy>=1.24.0
